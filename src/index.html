@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="script.js"></script>
+    <title>To Do List</title>
+  </head>
+  <body class="bg-slate-100 flex justify-center items-center min-h-screen py-6">
+    <div class="bg-white w-[32rem] py-8 px-4 rounded-lg relative">
+      <div
+        class="absolute top-4 left text-red-500 text-2xl cursor-pointer deletall"
+      >
+        <i
+          class="fa-solid fa-trash hover:scale-105 transition-all duration-500"
+        ></i>
+      </div>
+
+      <h1 class="text-center text-lg font-medium text-blue-400 mb-12">
+        To-Do List
+      </h1>
+
+      <form class="flex flex-col gap-2 form">
+        <input
+          type="text"
+          required
+          id="taskInput"
+          class="outline-none border rounded-md focus:border-blue-500 w-full py-2.5 text-sm px-3"
+          placeholder="Enter task..."
+        />
+        <button
+          class="py-2 px-6 rounded-md bg-blue-400 text-white shadow-xl hover:shadow-blue-500/30 transition-all add focus:outline-none"
+        >
+          Add
+        </button>
+      </form>
+
+      <div class="list mt-12 flex flex-col gap-4"></div>
+    </div>
+  </body>
+</html>
